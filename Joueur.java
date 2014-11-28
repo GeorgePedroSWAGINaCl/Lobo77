@@ -20,9 +20,12 @@ public class Joueur {
 
     public Carte defausserCarte(int index)
     {
-        return main.get(index);
+        return main.remove(index);
     }
 
+    public void piocheCarte(Carte carte){
+        main.add(carte);
+    }
     public int getTailleMain() {
         return main.size();
     }
@@ -37,5 +40,11 @@ public class Joueur {
 
     public void print() {
         System.out.println("nom : " + nom + ", jetons : " + nbJeton);
+    }
+
+    public void afficheCartes() {
+        for (Carte c: main){
+            c.print();
+        }
     }
 }
