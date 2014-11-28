@@ -6,7 +6,11 @@ package Lobo77;
 public class CarteX2 extends Carte {
     public CarteX2() {
         super(0);
+    }   
+public void print() {
+        System.out.println("[X2]");
     }
+
     /* règle : Si un joueur joue la carte «2x», le compte
     reste inchangé et le joueur suivant doit poser
     successivement 2 cartes, annoncer les 2
