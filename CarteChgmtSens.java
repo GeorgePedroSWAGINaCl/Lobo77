@@ -8,6 +8,11 @@ public class CarteChgmtSens extends Carte
     public CarteChgmtSens() {
         super(0);
     }
+    
+    public void print() {
+        System.out.println("[chgmtSens]");
+    }
+
     /* règle : Quand une carte «changement de sens»
     est jouée, le dernier total est répété et le
     sens de rotation inversé jusqu’au prochain
