@@ -28,6 +28,12 @@ public class Pioche {
         3 * 2 à 9
         1 * 76
         */
+        for (int i=0; i <4;i++ ) {
+            pioche.add(new CarteZero());
+            pioche.add(new CarteMoins10());
+            pioche.add(new CarteX2());
+            pioche.add(new CarteChgmtSens());
+        }
         for (int i = 0; i < 4; i++){
         	pioche.add(new Carte(0));
         	pioche.add(new Carte(-10));
