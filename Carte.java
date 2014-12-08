@@ -15,6 +15,6 @@ public class Carte {
     }
 
     public void print() {
-        System.out.println("[" + valeur + "]");
+        System.out.println("" + valeur);
     }
 }
